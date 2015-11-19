@@ -15,10 +15,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Mqtt.WinRT", "M2Mqtt\M2Mq
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "M2Mqtt.Shared", "M2Mqtt\M2Mqtt.Shared.shproj", "{6B3E1C63-4F76-402E-B08A-520908F4E17D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Mqtt.Droid", "M2Mqtt\M2Mqtt.Droid.csproj", "{7D85E87B-F484-4563-82DD-EB6B0FB9507F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Mqtt.iOS", "M2Mqtt\M2Mqtt.iOS.csproj", "{56776F00-C57E-4756-942B-5D05737E7837}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		M2Mqtt\M2Mqtt.Shared.projitems*{56776f00-c57e-4756-942b-5d05737e7837}*SharedItemsImports = 4
 		M2Mqtt\M2Mqtt.Shared.projitems*{0238f0e3-a02b-428d-8a3f-410d8f15bb50}*SharedItemsImports = 4
 		M2Mqtt\M2Mqtt.Shared.projitems*{a11aef5a-b246-4fe8-8330-06db73cc8074}*SharedItemsImports = 4
+		M2Mqtt\M2Mqtt.Shared.projitems*{7d85e87b-f484-4563-82dd-eb6b0fb9507f}*SharedItemsImports = 4
 		M2Mqtt\M2Mqtt.Shared.projitems*{6b3e1c63-4f76-402e-b08a-520908f4e17d}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +54,14 @@ Global
 		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56776F00-C57E-4756-942B-5D05737E7837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56776F00-C57E-4756-942B-5D05737E7837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56776F00-C57E-4756-942B-5D05737E7837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56776F00-C57E-4756-942B-5D05737E7837}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
