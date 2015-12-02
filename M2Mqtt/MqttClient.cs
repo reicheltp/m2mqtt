@@ -1652,8 +1652,8 @@ namespace uPLibrary.Networking.M2Mqtt
                         this.OnConnectionClosing();
 #else
                         // ... send keep alive
-						this.Ping();
-						wait = this.keepAlivePeriod;
+                        this.Ping();
+                        wait = this.keepAlivePeriod;
 #endif
                     }
                     else

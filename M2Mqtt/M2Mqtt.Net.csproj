@@ -3,13 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A11AEF5A-B246-4FE8-8330-06DB73CC8074}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>uPLibrary.Networking.M2Mqtt</RootNamespace>
-    <AssemblyName>M2Mqtt.Net</AssemblyName>
+    <AssemblyName>uPLibrary.Networking.M2Mqtt</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -19,6 +17,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\bin\Debug\M2Mqtt.Net</OutputPath>
+    <IntermediateOutputPath>..\obj\Debug\M2Mqtt.Net</IntermediateOutputPath>
     <DefineConstants>TRACE;DEBUG;SSL</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,6 +27,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\bin\Release\M2Mqtt.Net</OutputPath>
+    <IntermediateOutputPath>..\obj\Release\M2Mqtt.Net</IntermediateOutputPath>
     <DefineConstants>TRACE;SSL</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
