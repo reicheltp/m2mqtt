@@ -13,6 +13,7 @@ namespace uPLibrary.Networking.M2Mqtt
         public event MqttMsgPublishedEventHandler MqttMsgPublished;
         public event MqttMsgSubscribedEventHandler MqttMsgSubscribed;
         public event MqttMsgUnsubscribedEventHandler MqttMsgUnsubscribed;
+        public event ConnectionClosedEventHandler ConnectionClosed;
         public bool IsConnected { get; }
         public string ClientId { get; }
         public bool CleanSession { get; }

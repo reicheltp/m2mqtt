@@ -15,6 +15,8 @@
         event MqttMsgSubscribedEventHandler MqttMsgSubscribed;
         event MqttMsgUnsubscribedEventHandler MqttMsgUnsubscribed;
 
+        event ConnectionClosedEventHandler ConnectionClosed;
+
         bool IsConnected { get; }
 
         string ClientId { get; }
