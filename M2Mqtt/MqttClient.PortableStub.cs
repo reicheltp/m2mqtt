@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
+// ReSharper disable UnusedParameter.Local
 
 // ReSharper disable UnassignedGetOnlyAutoProperty
 
@@ -19,6 +22,21 @@ namespace uPLibrary.Networking.M2Mqtt
         public string WillMessage { get; }
         public MqttProtocolVersion ProtocolVersion { get; set; }
         public MqttSettings Settings { get; }
+
+        public MqttClient(string brokerHostName)
+        {
+        }
+
+        public MqttClient(string brokerHostName, int brokerPort, bool secure, X509Certificate caCert,
+            MqttSslProtocols sslProtocol)
+        {
+        }
+
+        public MqttClient(string brokerHostName, int brokerPort, bool secure, X509Certificate caCert, MqttSslProtocols sslProtocol,
+            RemoteCertificateValidationCallback userCertificateValidationCallback)
+        {
+        }
+
 
         public byte Connect(string clientId)
         {
