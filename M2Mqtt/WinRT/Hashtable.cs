@@ -16,6 +16,7 @@ Contributors:
 
 using System.Collections.Generic;
 
+// ReSharper disable once CheckNamespace
 namespace uPLibrary.Networking.M2Mqtt
 {
     /// <summary>

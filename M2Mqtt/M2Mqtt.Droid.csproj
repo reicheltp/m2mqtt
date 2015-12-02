@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MqttClient.cs" />
     <Compile Include="Net\Fx.cs" />
     <Compile Include="Net\MqttNetworkChannel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

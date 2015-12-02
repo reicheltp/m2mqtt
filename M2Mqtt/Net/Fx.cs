@@ -14,8 +14,10 @@ Contributors:
    Paolo Patierno - initial API and implementation and/or initial documentation
 */
 
+using System;
 using System.Threading;
 
+// ReSharper disable once CheckNamespace
 namespace uPLibrary.Networking.M2Mqtt
 {
     /// <summary>
@@ -23,9 +25,9 @@ namespace uPLibrary.Networking.M2Mqtt
     /// </summary>
     public class Fx
     {
-        public static void StartThread(ThreadStart threadStart)
+        public static void StartThread(Action threadStart)
         {
-            new Thread(threadStart).Start();
+            new Thread(() => threadStart()).Start();
         }
 
         public static void SleepThread(int millisecondsTimeout)

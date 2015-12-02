@@ -17,7 +17,7 @@
     <Optimize>false</Optimize>
     <OutputPath>..\bin\Debug\M2Mqtt.Portable259</OutputPath>
     <IntermediateOutputPath>..\obj\Debug\M2Mqtt.Portable259</IntermediateOutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG;SSL</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -30,6 +30,17 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <DefineConstants>SSL</DefineConstants>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Portable\FxPortableStub.cs" />
+    <Compile Include="Portable\MqttNetworkChannelPortableStub.cs" />
+    <Compile Include="WinRT\Hashtable.cs" />
+    <Compile Include="WinRT\Queue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MqttClient.PortableStub.cs" />
+  </ItemGroup>
+  <Import Project="M2Mqtt.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

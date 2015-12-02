@@ -56,10 +56,13 @@ namespace uPLibrary.Networking.M2Mqtt
     /// <summary>
     /// MQTT Client
     /// </summary>
-    public class MqttClient
+    public class MqttClient : IMqttClient
+#if BROKER
+        ,IMqttBroker
+#endif
     {
 #if BROKER
-        #region Constants ...
+#region Constants ...
 
         // thread names
         private const string RECEIVE_THREAD_NAME = "ReceiveThread";
@@ -67,55 +70,8 @@ namespace uPLibrary.Networking.M2Mqtt
         private const string PROCESS_INFLIGHT_THREAD_NAME = "ProcessInflightThread";
         private const string KEEP_ALIVE_THREAD = "KeepAliveThread";
 
-        #endregion
+#endregion
 #endif
-
-        /// <summary>
-        /// Delagate that defines event handler for PUBLISH message received
-        /// </summary>
-        public delegate void MqttMsgPublishEventHandler(object sender, MqttMsgPublishEventArgs e);
-
-        /// <summary>
-        /// Delegate that defines event handler for published message
-        /// </summary>
-        public delegate void MqttMsgPublishedEventHandler(object sender, MqttMsgPublishedEventArgs e);
-
-        /// <summary>
-        /// Delagate that defines event handler for subscribed topic
-        /// </summary>
-        public delegate void MqttMsgSubscribedEventHandler(object sender, MqttMsgSubscribedEventArgs e);
-
-        /// <summary>
-        /// Delagate that defines event handler for unsubscribed topic
-        /// </summary>
-        public delegate void MqttMsgUnsubscribedEventHandler(object sender, MqttMsgUnsubscribedEventArgs e);
-
-#if BROKER
-        /// <summary>
-        /// Delagate that defines event handler for SUBSCRIBE message received
-        /// </summary>
-        public delegate void MqttMsgSubscribeEventHandler(object sender, MqttMsgSubscribeEventArgs e);
-
-        /// <summary>
-        /// Delagate that defines event handler for UNSUBSCRIBE message received
-        /// </summary>
-        public delegate void MqttMsgUnsubscribeEventHandler(object sender, MqttMsgUnsubscribeEventArgs e);
-
-        /// <summary>
-        /// Delagate that defines event handler for CONNECT message received
-        /// </summary>
-        public delegate void MqttMsgConnectEventHandler(object sender, MqttMsgConnectEventArgs e);
-
-        /// <summary>
-        /// Delegate that defines event handler for client disconnection (DISCONNECT message or not)
-        /// </summary>
-        public delegate void MqttMsgDisconnectEventHandler(object sender, EventArgs e);
-#endif
-
-        /// <summary>
-        /// Delegate that defines event handler for cliet/peer disconnection
-        /// </summary>
-        public delegate void ConnectionClosedEventHandler(object sender, EventArgs e);
 
         // broker hostname (or ip address) and port
         private string brokerHostName;
@@ -247,7 +203,7 @@ namespace uPLibrary.Networking.M2Mqtt
             get { return this.settings; }
         }
 
-#if !(WINDOWS_APP || WINDOWS_PHONE_APP) 
+#if !(WINDOWS_APP || WINDOWS_PHONE_APP)
         /// <summary>
         /// Constructor
         /// </summary>
@@ -2612,14 +2568,5 @@ namespace uPLibrary.Networking.M2Mqtt
 
             }
         }
-    }
-
-    /// <summary>
-    /// MQTT protocol version
-    /// </summary>
-    public enum MqttProtocolVersion
-    {
-        Version_3_1 = MqttMsgConnect.PROTOCOL_VERSION_V3_1,
-        Version_3_1_1 = MqttMsgConnect.PROTOCOL_VERSION_V3_1_1
     }
 }

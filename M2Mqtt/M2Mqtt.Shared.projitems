@@ -9,10 +9,12 @@
     <Import_RootNamespace>uPLibrary.Networking.M2Mqtt</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MqttProtocolVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Exceptions\MqttClientException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Exceptions\MqttCommunicationException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Exceptions\MqttConnectionException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Exceptions\MqttTimeoutException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IMqttClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IMqttNetworkChannel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Internal\InternalEvent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Internal\MsgInternalEvent.cs" />
@@ -40,7 +42,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Messages\MqttMsgUnsubscribe.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Messages\MqttMsgUnsubscribedEventArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Messages\MqttMsgUnsubscribeEventArgs.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MqttClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MqttDelegates.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MqttSecurity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MqttSettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Session\MqttBrokerSession.cs" />

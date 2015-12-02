@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Mqtt.Net", "M2Mqtt\M2Mqtt.Net.csproj", "{A11AEF5A-B246-4FE8-8330-06DB73CC8074}"
 EndProject
@@ -22,31 +22,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2Mqtt.Portable259", "M2Mqtt\M2Mqtt.Portable259.csproj", "{1C8D74B3-157D-4992-846C-06AB446A93DC}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		M2Mqtt\M2Mqtt.Shared.projitems*{56776f00-c57e-4756-942b-5d05737e7837}*SharedItemsImports = 4
+		M2Mqtt\M2Mqtt.Shared.projitems*{0238f0e3-a02b-428d-8a3f-410d8f15bb50}*SharedItemsImports = 4
+		M2Mqtt\M2Mqtt.Shared.projitems*{1c8d74b3-157d-4992-846c-06ab446a93dc}*SharedItemsImports = 4
+		M2Mqtt\M2Mqtt.Shared.projitems*{a11aef5a-b246-4fe8-8330-06db73cc8074}*SharedItemsImports = 4
+		M2Mqtt\M2Mqtt.Shared.projitems*{7d85e87b-f484-4563-82dd-eb6b0fb9507f}*SharedItemsImports = 4
+		M2Mqtt\M2Mqtt.Shared.projitems*{6b3e1c63-4f76-402e-b08a-520908f4e17d}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1C8D74B3-157D-4992-846C-06AB446A93DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C8D74B3-157D-4992-846C-06AB446A93DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C8D74B3-157D-4992-846C-06AB446A93DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C8D74B3-157D-4992-846C-06AB446A93DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56776F00-C57E-4756-942B-5D05737E7837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56776F00-C57E-4756-942B-5D05737E7837}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56776F00-C57E-4756-942B-5D05737E7837}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56776F00-C57E-4756-942B-5D05737E7837}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A11AEF5A-B246-4FE8-8330-06DB73CC8074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A11AEF5A-B246-4FE8-8330-06DB73CC8074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A11AEF5A-B246-4FE8-8330-06DB73CC8074}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,13 +49,26 @@ Global
 		{F733523A-F14E-4F5A-9E7C-085CA80F52B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F733523A-F14E-4F5A-9E7C-085CA80F52B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F733523A-F14E-4F5A-9E7C-085CA80F52B1}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		M2Mqtt\M2Mqtt.Shared.projitems*{56776f00-c57e-4756-942b-5d05737e7837}*SharedItemsImports = 4
-		M2Mqtt\M2Mqtt.Shared.projitems*{0238f0e3-a02b-428d-8a3f-410d8f15bb50}*SharedItemsImports = 4
-		M2Mqtt\M2Mqtt.Shared.projitems*{a11aef5a-b246-4fe8-8330-06db73cc8074}*SharedItemsImports = 4
-		M2Mqtt\M2Mqtt.Shared.projitems*{7d85e87b-f484-4563-82dd-eb6b0fb9507f}*SharedItemsImports = 4
-		M2Mqtt\M2Mqtt.Shared.projitems*{6b3e1c63-4f76-402e-b08a-520908f4e17d}*SharedItemsImports = 13
+		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6D540B-8554-4FFD-8884-8BEFCCD9AD41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0238F0E3-A02B-428D-8A3F-410D8F15BB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D85E87B-F484-4563-82DD-EB6B0FB9507F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56776F00-C57E-4756-942B-5D05737E7837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56776F00-C57E-4756-942B-5D05737E7837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56776F00-C57E-4756-942B-5D05737E7837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56776F00-C57E-4756-942B-5D05737E7837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8D74B3-157D-4992-846C-06AB446A93DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8D74B3-157D-4992-846C-06AB446A93DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8D74B3-157D-4992-846C-06AB446A93DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8D74B3-157D-4992-846C-06AB446A93DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

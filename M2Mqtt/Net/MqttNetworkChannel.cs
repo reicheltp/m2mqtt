@@ -28,6 +28,7 @@ using System.Security.Cryptography.X509Certificates;
 using System;
 
 
+// ReSharper disable once CheckNamespace
 namespace uPLibrary.Networking.M2Mqtt
 {
     /// <summary>
